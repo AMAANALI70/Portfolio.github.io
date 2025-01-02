@@ -8,7 +8,7 @@
 /* Global Styles */
 body {
     font-family: 'Poppins', sans-serif;
-    background-color: #121212; /* Dark background */
+    background-color: #000000; /* Pure black background */
     color: #e0e0e0; /* Light text color */
     margin: 0;
     padding: 20px;
@@ -16,27 +16,38 @@ body {
     justify-content: center;
     align-items: flex-start;
     min-height: 100vh;
+    transition: background-color 0.3s ease; /* Smooth background color transition */
 }
 
 /* Main Container */
 section {
-    background-color: #1e1e1e; /* Darker container background */
+    background-color: #181818; /* Darker shade for the container */
     padding: 2rem;
     width: 90%;
     max-width: 800px;
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.4); /* Darker shadow for cool depth effect */
     border-radius: 8px;
     text-align: center;
     margin-top: 30px;
+    transition: box-shadow 0.3s ease; /* Smooth shadow transition */
+}
+
+section:hover {
+    box-shadow: 0 6px 25px rgba(255, 255, 255, 0.2); /* Hover effect on section */
 }
 
 /* Header */
 header {
-    background-color: #6a1b9a; /* Purple background */
+    background-color: #3a3a3a; /* Dark gray background */
     color: white;
     padding: 2rem;
     border-radius: 8px;
     margin-bottom: 1.5rem;
+    transition: background-color 0.3s ease; /* Smooth color transition */
+}
+
+header:hover {
+    background-color: #555555; /* Lighter gray on hover for effect */
 }
 
 header h1 {
@@ -50,8 +61,14 @@ header p {
 
 /* Section Titles */
 h2 {
-    color: #6a1b9a; /* Purple color for headings */
+    color: #9c27b0; /* Cool purple color for headings */
     margin-bottom: 1rem;
+    text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.6); /* Slight text shadow for a cool effect */
+    transition: color 0.3s ease; /* Smooth color transition */
+}
+
+h2:hover {
+    color: #7b1fa2; /* Darker purple when hovered */
 }
 
 /* List Items */
@@ -61,20 +78,28 @@ ul {
 }
 
 ul li {
-    background-color: #333333; /* Dark list item background */
+    background-color: #333333; /* Dark gray background */
     margin-bottom: 0.5rem;
     padding: 0.75rem;
     border-radius: 5px;
+    transition: transform 0.3s ease, background-color 0.3s ease; /* Smooth transform and background transition */
+}
+
+ul li:hover {
+    transform: translateX(10px); /* Cool hover effect sliding to the right */
+    background-color: #444444; /* Lighter gray on hover */
 }
 
 /* Links */
 a {
-    color: #6a1b9a; /* Purple link color */
+    color: #9c27b0; /* Purple link color */
     text-decoration: none;
     font-weight: bold;
+    transition: color 0.3s ease; /* Smooth color transition for links */
 }
 
 a:hover {
+    color: #7b1fa2; /* Darker purple on hover */
     text-decoration: underline;
 }
 
@@ -94,9 +119,14 @@ dl dd {
 blockquote {
     font-style: italic;
     color: #e0e0e0;
-    border-left: 4px solid #6a1b9a; /* Purple border */
+    border-left: 4px solid #9c27b0; /* Purple border */
     padding-left: 1rem;
     margin-top: 2rem;
+    transition: border-color 0.3s ease; /* Smooth transition for border color */
+}
+
+blockquote:hover {
+    border-left-color: #7b1fa2; /* Darker purple border on hover */
 }
 
 /* Responsive Design */

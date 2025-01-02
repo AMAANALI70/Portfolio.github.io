@@ -42,7 +42,6 @@ nav ul li a {
     color: var(--text-secondary);
     text-decoration: none;
     font-weight: 600;
-    transition: color 0.3s ease;
 }
 
 nav ul li a:hover {
@@ -101,7 +100,6 @@ p {
     border-radius: 4px;
     text-decoration: none;
     font-weight: 600;
-    transition: background-color 0.3s ease;
 }
 
 .button:hover {
@@ -133,11 +131,6 @@ ul li {
 .social-link {
     color: var(--text-secondary);
     margin: 0 0.5rem;
-    transition: color 0.3s ease;
-}
-
-.social-link:hover {
-    color: var(--accent);
 }
 
 dl {
@@ -162,39 +155,14 @@ blockquote {
     color: var(--text-secondary);
 }
 
-@media (max-width: 768px) {
-    nav ul {
-        flex-direction: column;
-    }
-
-    h1 {
-        font-size: 2rem;
-    }
-
-    h2 {
-        font-size: 1.5rem;
-    }
-
-    .team-image {
-        max-width: 100%;
-        height: auto;
-    }
+table {
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
 }
 
-@media (max-width: 1024px) {
-    main {
-        padding: 1rem;
-    }
-
-    h1 {
-        font-size: 2.5rem;
-    }
-
-    h2 {
-        font-size: 1.8rem;
-    }
-
-    .team-members {
-        grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
-    }
+td, th {
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 8px;
 }
